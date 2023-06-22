@@ -20,7 +20,7 @@ void main()
 		scanf("%s",buff);
 		sendto(sockfd,buff,sizeof(buff),0,(struct sockaddr *)&addr,s);
 		recvfrom(sockfd,buff,sizeof(buff),0,(struct sockaddr *)&addr,&s);
-		printf("Recieved from server %s\n",buff);
+		printf("Received from server %s\n",buff);
 	}while(strcmp(buff,"stop")!=0);
 	close(sockfd);
 }
