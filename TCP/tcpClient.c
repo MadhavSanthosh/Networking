@@ -19,7 +19,7 @@ void main()
 		scanf("%s",buff);
 		send(sockfd,buff,sizeof(buff),0);
 		recv(sockfd,buff,sizeof(buff),0);
-		printf("Recieved from server %s\n",buff);
+		printf("Received from server %s\n",buff);
 	}while(strcmp(buff,"stop")!=0);
 	close(sockfd);
 }
