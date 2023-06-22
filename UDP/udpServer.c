@@ -15,7 +15,7 @@ void main()
 	int s=sizeof(struct sockaddr_in);
 	sockfd=socket(AF_INET,SOCK_DGRAM,0);
 	bind(sockfd,(struct sockaddr *)&addr,sizeof(addr));
-	do{	printf("Connection established\nRecieving message from client\n");
+	do{	printf("Connection established\nReceiving message from client\n");
 		recvfrom(sockfd,buff,sizeof(buff),0,(struct sockaddr *)&addr,&s);
 		printf("%s",buff);
 		printf("Enter message\n");
