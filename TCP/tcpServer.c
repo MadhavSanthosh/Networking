@@ -18,7 +18,7 @@ void main()
 	listen(sockfd,5);
 	newsocket=accept(sockfd,(struct sockaddr *)&addr2,(&s));
 	do{	
-		printf("Connection established\nRecieving message from client\n");
+		printf("Connection established\nReceiving message from client\n");
 		recv(newsocket,buff,sizeof(buff),0);
 		printf("%s\n",buff);
 		printf("Enter message\n");
