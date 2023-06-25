@@ -22,7 +22,7 @@ void main()
 		printf("%s\n",buff);
 		if(strcmp(buff,"stop")!=0)
 		{
-		fp=fopen("dnstest","r");
+		fp=fopen("dnstest.txt","r");
 		fscanf(fp,"%s\t%s",url,ip);
 		while(strcmp(url,buff)!=0)
 		{	fscanf(fp,"%s\t%s",url,ip);
